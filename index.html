@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Daftar Menu Makanan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #edf7d5;
+        }
+
+        .menu-item img {
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .info {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Daftar Menu Makanan</h1>
+        <div class="row">
+            <div class="mb-4 col-lg-3 col-md-6">
+                <div class="card menu-item">
+                    <img src="https://images.unsplash.com/photo-1680674774705-90b4904b3a7f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi Goreng</h5>
+                        <p class="card-text">Nasi goreng adalah makanan yang terbuat dari nasi yang digoreng dan dicampur dengan berbagai bumbu serta bahan lainnya.</p>
+                        <button class="btn btn-success">Pesan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4 col-lg-3 col-md-6">
+                <div class="card menu-item">
+                    <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Mie Ayam</h5>
+                        <p class="card-text">Mie ayam adalah makanan yang terbuat dari mie yang dicampur dengan daging ayam dan berbagai bumbu lainnya.</p>
+                        <button class="btn btn-success">Pesan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4 col-lg-3 col-md-6">
+                <div class="card menu-item">
+                    <img src="https://picsum.photos/id/1018/200/200" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Gado-Gado</h5>
+                        <p class="card-text">Gado-gado adalah makanan yang terbuat dari sayuran yang dicampur dengan berbagai bumbu lainnya.</p>
+                        <button class="btn btn-success">Pesan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4 col-lg-3 col-md-6">
+                <div class="card menu-item">
+                    <img src="https://images.unsplash.com/photo-1706922122195-a1d670210618?q=80&w=1126&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Martabak</h5>
+                        <p class="card-text">Martabak adalah makanan yang terbuat dari telur dan dicampur dengan berbagai bumbu lainnya.</p>
+                        <button class="btn btn-success">Pesan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center info">Terima kasih telah mengunjungi website kami, semoga Anda menikmati makanan yang kami tawarkan!</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Terima kasih telah memesan makanan!');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
